@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1>Hello</h1>
+        <div class="form">
+            <div class="form__title">
+                For business enquiries please use the form below
+            </div>
+            <div class="form__subtitle">
+                <span>*</span>Required
+            </div>
+            <form action="">
+                <div class="form__items">
+                    <div class="form__items__item">
+                        <input id="name" type="text" required>
+                        <label for="name">Name <span>*</span></label>
+                    </div>
+                    <div class="form__items__item">
+                        <input id="company" type="text" required>
+                        <label for="company">Company <span>*</span></label>
+                    </div>
+                    <div class="form__items__item">
+                        <input id="email" type="email" required>
+                        <label for="email">Email <span>*</span></label>
+                    </div>
+                    <div class="form__items__item">
+                        <input id="phone" type="text" required>
+                        <label for="phone">Phone <span>*</span></label>
+                    </div>
+                    <div class="form__items__item">
+                        <input id="subject" type="text" required>
+                        <label for="subject">Subject <span>*</span></label>
+                    </div>
+                    <div class="form__items__item">
+                        <textarea id="message" wrap="soft" rows="1" required></textarea>
+                        <label for="message">Message <span>*</span></label>
+                    </div>
+                    <div class="form__items__item">
+                        <input class="checkbox" id="accept" type="checkbox" required>
+                        <label for="accept" class="checkbox-text">
+							Message&nbsp;<a href="#" target="_blank">Terms and Privacy Policy</a>
+						</label>
+                    </div>
+                </div>
+                <input type="submit" class="form_btn" value="Send">
+            </form>
+        </div>
+    </main>
+
+</body>
+
+<script src="main.js"></script>
+
+</html>

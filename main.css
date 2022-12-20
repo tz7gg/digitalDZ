@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url('cosmos.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: "Roboto";
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    padding-top: 90px;
+    margin-bottom: 25px;
+    text-shadow: 0px 4px 19px rgba(0, 0, 0, 0.97);
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 120%;
+}
+
+.form {
+    padding: 41px 45px;
+    background: #171929;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+    border-radius: 27px;
+    max-width: 393px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.form__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form__subtitle {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #797EA3;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form__subtitle span {
+    color: #3F4363;
+}
+
+.form__items__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 38px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.form__items__item label {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    margin-bottom: 7px;
+    color: #797EA3;
+}
+
+.form__items__item label span {
+    color: #3F4363;
+}
+
+.form__items__item input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    background-color: #171929;
+    padding-bottom: 4px;
+    border: none;
+    border-bottom: 1px solid #3F4363;
+    outline: none;
+}
+
+.form__items__item input {
+    border: none;
+    border-bottom: 1px solid #3F4363;
+}
+
+.form__items__item textarea {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid #3F4363;
+    background-color: #171929;
+    padding-bottom: 4px;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    min-height: 28px;
+    height: 100%;
+}
+
+.form__items__item textarea:focus {
+    border-color: #fff;
+}
+
+.form__items__item textarea:focus {
+    color: #fff;
+}
+
+.form__items__item input:focus+label:not(.checkbox-text) {
+    color: #fff;
+}
+
+.form__items__item textarea:focus+label {
+    color: #fff;
+}
+
+.form__items__item input:focus {
+    border-color: #fff;
+}
+
+.form__items__item:last-child {
+    margin-bottom: 30px;
+}
+
+.form__items__item:nth-last-child(-n+2) {
+    margin-bottom: 30px;
+}
+
+.form .checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form .checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.form .checkbox+label a {
+    color: rgba(185, 190, 229, 1);
+}
+
+.form .checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    margin-right: 12px;
+    background: #2C2F47;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.form .checkbox:checked+label::before {
+    background-image: url('accept.svg');
+}
+
+.form_btn {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    line-height: 120%;
+    padding: 11px 40px;
+    background: #2C2F47;
+    border-radius: 28px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 390px) {
+    .checkbox-text {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .checkbox-text a {
+        margin-top: 16px;
+    }
+}
